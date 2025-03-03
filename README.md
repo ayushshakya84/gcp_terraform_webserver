@@ -31,7 +31,7 @@ This project is modularized into three Terraform modules:
 3. **Virtual Network** - Defines the VPC, subnets, and firewall rules.
 ## **Variables**
 The project uses several Terraform variables defined in `variables.tf`. Below are key variable definitions:
-### - **Compute Engine Instances**
+- ###  **Compute Engine Instances**
 ```hcl
 variable "instances" {
   description = "Map of instance configurations"
@@ -59,7 +59,7 @@ variable "vpc" {
   }))
 }
 ```
-### - **Load Balancer Configuration**
+- ###  **Load Balancer Configuration**
 ```hcl
 variable "backend_service" {
   description = "Map of backend service configurations"
@@ -142,6 +142,6 @@ firewall = {
 }
 ```
 ## **How to Deploy**
-### **1. Initialize Terraform**
+### 1. Initialize Terraform
 
 Run the following command to initialize the working directory:
