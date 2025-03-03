@@ -4,9 +4,9 @@ This Terraform project automates the deployment of a Google Cloud infrastructure
 ## **Requirements**
 Ensure you have the following dependencies installed before running Terraform:
 - Terraform (>= v1.0)
-- Google Cloud SDK (gcloud CLI)
+- Google Cloud SDK (`gcloud` CLI)
 - IAM permissions to create resources in GCP
-- Configured GCP authentication (gcloud auth application-default login)
+- Configured GCP authentication (`gcloud auth application-default login`)
 ## **Providers**
 This project uses the Google Cloud provider:
 ```hcl
