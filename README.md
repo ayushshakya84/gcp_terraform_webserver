@@ -142,6 +142,52 @@ firewall = {
 }
 ```
 ## **How to Deploy**
-### 1. Initialize Terraform
-
+### **1. Initialize Terraform**
 Run the following command to initialize the working directory:
+```sh
+terraform init
+```
+### **2. Plan the Deployment**
+Generate and review the execution plan:
+```sh
+terraform plan
+``
+### **3. Apply the Configuration**
+Apply the changes to deploy resources:
+```sh
+terraform apply -auto-approve
+```
+### **4. Destroy the Infrastructure**
+To delete all created resources:
+```sh
+terraform destroy -auto-approve
+```
+
+## **Project Structure**
+```bash
+/terraform-project
+│── /modules
+│   ├── /compute_engine
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── /virtual_network
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── /load_balancer
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│── main.tf
+│── variables.tf
+│── terraform.tfvars
+│── README.md
+```
+## **Best Practices**
+- Use **remote state storage** (e.g., GCS backend) to collaborate in teams.
+- Implement **Terraform workspaces** to manage multiple environments (dev, staging, prod).
+- Follow the **principle of least privilege (PoLP)** when assigning IAM permissions.
+- Use **module versioning** to avoid breaking changes.
+## **Contributing**
+If you’d like to contribute, please fork the repository and submit a pull request.
