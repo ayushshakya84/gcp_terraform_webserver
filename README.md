@@ -151,7 +151,7 @@ terraform init
 Generate and review the execution plan:
 ```sh
 terraform plan
-``
+```
 ### **3. Apply the Configuration**
 Apply the changes to deploy resources:
 ```sh
