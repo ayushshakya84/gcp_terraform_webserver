@@ -100,7 +100,7 @@ module "load_balancer" {
   global_forwarding_rule = var.global_forwarding_rule
 }
 ```
-## **Terraform Variables Configuration (terraform.tfvars)**
+## **Terraform Variables Configuration (`terraform.tfvars`)**
 The `terraform.tfvars` file provides values for the variables.
 Example configuration:
 ```hcl
