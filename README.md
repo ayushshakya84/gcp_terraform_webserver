@@ -20,8 +20,8 @@ terraform {
 }
 
 provider "google" {
-  project = "lexical-drake-423604-d4"
-  region  = "us-west1"
+  project = "Project ID"
+  region  = "Region"
 }
 ```
 ## **Modules**
