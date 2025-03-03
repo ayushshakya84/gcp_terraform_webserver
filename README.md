@@ -48,7 +48,7 @@ variable "instances" {
   }))
 }
 ```
-### - **Virtual Network (VPC & Subnets)**
+- ###  **Virtual Network (VPC & Subnets)**
 ```hcl
 variable "vpc" {
   description = "Map of VPC configurations"
