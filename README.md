@@ -32,7 +32,7 @@ This project is modularized into three Terraform modules:
 ## **Variables**
 The project uses several Terraform variables defined in `variables.tf`. Below are key variable definitions:
 ### - **Compute Engine Instances**
-```
+```hcl
 variable "instances" {
   description = "Map of instance configurations"
   type = map(object({
@@ -49,7 +49,7 @@ variable "instances" {
 }
 ```
 ### - **Virtual Network (VPC & Subnets)**
-```
+```hcl
 variable "vpc" {
   description = "Map of VPC configurations"
   type = map(object({
@@ -60,7 +60,7 @@ variable "vpc" {
 }
 ```
 ### - **Load Balancer Configuration**
-```
+```hcl
 variable "backend_service" {
   description = "Map of backend service configurations"
   type = map(object({
@@ -76,7 +76,7 @@ variable "backend_service" {
 ```
 ## **Main Configuration (`main.tf`)**
 The main Terraform configuration defines module sources and passes necessary variables.
-```
+```hcl
 module "compute_engine" {
   source = "./Modules/compute_engine"
   instances      = var.instances
@@ -103,7 +103,7 @@ module "load_balancer" {
 ## **Terraform Variables Configuration (terraform.tfvars)**
 The `terraform.tfvars` file provides values for the variables.
 Example configuration:
-```
+```hcl
 instances = {
   instance1 = {
     name             = "instance-1"
@@ -143,4 +143,5 @@ firewall = {
 ```
 ## **How to Deploy**
 ### **1. Initialize Terraform**
+
 Run the following command to initialize the working directory:
