@@ -181,6 +181,8 @@ terraform destroy -auto-approve
 │   │   ├── outputs.tf
 │── main.tf
 │── variables.tf
+│── output.tf
+│── provider.tf
 │── terraform.tfvars
 │── README.md
 ```
