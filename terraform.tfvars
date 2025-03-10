@@ -65,7 +65,7 @@ firewall = {
       }
     ]
     target_tags   = ["web"]
-    source_ranges = ["49.43.153.244"]
+    source_ranges = ["Source_IP"]
   }
 }
 
